@@ -26,7 +26,7 @@
         <td>{{ employee.position }}</td>
         <td>{{ employee.office }}</td>
         <td>{{ employee.salary | currency:"USD":"symbol" }}</td>
-        <td><a routerLink="employee/{{ employee.id }}" class="btn btn-secondary btn-md"><i class="fa fa-arrow-circle-o-right"></i> Details</a></td>
+        <td><a routerLink="employee/{{ employee.id }}" class="badge badge-info"><i class="fa fa-arrow-circle-o-right"></i> Details</a></td>
       </tr>
     </tbody>
   </table>

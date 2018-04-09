@@ -1,15 +1,15 @@
 <div class="row">
     <div class="col-md-6">
-      <a routerLink="/" class="btn btn-link">
+      <a routerLink="/" class="badge badge-info">
         <i class="fa fa-arrow-circle-o-left"></i> Back to Dashboard
       </a>
     </div>
     <div class="col-md-6">
       <div class="btn-group pull-right">
-        <a routerLink="/employee/edit/{{ id }}" class="fa fa-pencil btn btn-dark">
+        <a routerLink="/employee/edit/{{ id }}" class="fa fa-pencil btn btn-dark btn-md">
           Edit
         </a>
-        <button (click)="onDeleteClick()" class="fa fa-trash btn btn-danger"> Delete</button>
+        <button (click)="onDeleteClick()" class="fa fa-trash btn btn-danger btn-md"> Delete</button>
       </div>
     </div>
   </div>
@@ -41,7 +41,7 @@
               <div class="input-group">
                 <input type="text" name="salary" class="form-control" [(ngModel)]="employee.salary">
                 <span class="input-group-btn">
-                  <button type="submit" class="btn ptn-primary">Update</button>
+                  <button type="submit" class="fa fa-upload btn ptn-primary btn-md"> Update</button>
                 </span>
               </div>
             </form>
