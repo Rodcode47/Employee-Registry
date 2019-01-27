@@ -18,7 +18,8 @@ import { RegisterGuard } from './guards/register.guard';
 
 // Routing configs
 const routes: Routes = [
-  {path: '', component: DashboardComponent, canActivate: [AuthGuard]},
+  {path: '', component: DashboardComponent},
+  //{path: '', component: DashboardComponent, canActivate: [AuthGuard]},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent, canActivate: [RegisterGuard]},
   {path: 'employee/add', component: AddEmployeeComponent, canActivate: [AuthGuard]},
